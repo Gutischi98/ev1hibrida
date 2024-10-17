@@ -1,3 +1,16 @@
-<p>
-  triangulo-escaleno works!
-</p>
+<ion-list lines="none">
+  <ion-item> 
+    <h2>Triángulo Escaleno</h2>
+  </ion-item>
+  <ion-item>
+<ion-input [(ngModel)]="lado1Str" label="Lado 1" type="number" fill="outline" placeholder="Ingrese el lado 1 del  triángulo"></ion-input>
+<ion-input [(ngModel)]="lado2Str" label="Lado 2" type="number" fill="outline" placeholder="Ingrese el lado 2 del  triángulo"></ion-input>
+<ion-input [(ngModel)]="lado3Str" label="Lado 3" type="number" fill="outline" placeholder="Ingrese el lado 3 del  triángulo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="calcularPerimetro()">Calcular perímetro</ion-button>
+  </ion-item>
+  <ion-item>
+    {{ resultado }}
+  </ion-item>
+</ion-list>

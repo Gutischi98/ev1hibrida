@@ -1,3 +1,14 @@
-<p>
-  triangulo-equilatero works!
-</p>
+<ion-list lines="none">
+  <ion-item> 
+    <h2>Triángulo Equilátero</h2>
+  </ion-item>
+  <ion-item>
+<ion-input [(ngModel)]="ladosStr" label="Lados" type="number" fill="outline" placeholder="Ingrese la medida de los lados del Triángulo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="calcularPerimetro()">Calcular perímetro</ion-button>
+  </ion-item>
+  <ion-item>
+    {{ resultado }}
+  </ion-item>
+</ion-list>

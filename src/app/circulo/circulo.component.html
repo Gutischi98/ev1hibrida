@@ -1,3 +1,14 @@
-<p>
-  circulo works!
-</p>
+<ion-list lines="none">
+  <ion-item> 
+    <h2>Círculo</h2>
+  </ion-item>
+  <ion-item>
+<ion-input [(ngModel)]="radioStr" label="Radio del círculo" type="number" fill="outline" placeholder="Ingrese el radio del círculo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="calcularPerimetro()">Calcular perímetro</ion-button>
+  </ion-item>
+  <ion-item>
+    {{ resultado }}
+  </ion-item>
+</ion-list>
