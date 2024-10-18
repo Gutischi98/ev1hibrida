@@ -6,14 +6,14 @@
 
 <ion-content [fullscreen]="true">
   <ion-select
-    (ionChange)="manejarSeleccionFigura($event)"
-    label="Seleccione una figura"
+  (ionChange)="manejarSeleccionFigura($event)"
+  label="Seleccione una figura"
   >
-    <ion-select-option value="circulo">Círculo</ion-select-option>
-    <ion-select-option value="escaleno">Triángulo Escaleno</ion-select-option>
-    <ion-select-option value="equilatero">Triángulo Equilátero</ion-select-option>
-  </ion-select>
-  <app-circulo *ngIf="esCirculo()" />
-  <app-triangulo-equilatero *ngIf="esTrianguloEquilatero()" />
-  <app-triangulo-escaleno *ngIf="esTrianguloEscaleno()" />
+  <ion-select-option value="circulo">Círculo</ion-select-option>
+  <ion-select-option value="escaleno">Triángulo Escaleno</ion-select-option>
+  <ion-select-option value="equilatero">Triángulo Equilátero</ion-select-option>
+</ion-select>
+<app-circulo *ngIf="esCirculo()" />
+<app-triangulo-equilatero *ngIf="esTrianguloEquilatero()" />
+<app-triangulo-escaleno *ngIf="esTrianguloEscaleno()" />
 </ion-content>

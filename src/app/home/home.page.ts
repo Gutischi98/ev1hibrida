@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonInput, IonSelectOption, IonSelect, SelectChangeEventDetail } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonInput, IonSelectOption, IonSelect, SelectChangeEventDetail} from '@ionic/angular/standalone';
 import { CirculoComponent } from '../circulo/circulo.component';
 import { TrianguloEquilateroComponent } from '../triangulo-equilatero/triangulo-equilatero.component';
 import { TrianguloEscalenoComponent } from '../triangulo-escaleno/triangulo-escaleno.component';
